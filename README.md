@@ -4,7 +4,7 @@
 - **Total Test Cases**: 20 test cases  
 - **Coverage**: Semua endpoint yang ada di Postman Collection  
 - **Metode**: API Testing dengan Postman  
-- **Status**: SEMUA TEST CASES DIBUAT SESUAI POSTMAN  
+
 
 ---
 
@@ -135,10 +135,4 @@
 - **Positive Tests**: 19 (95%)
 - **Negative Tests**: 1 (5%)
 - **Execution Status**: Semua test cases menunggu eksekusi
-
-### Coverage Analysis:
-- **CRUD Operations**: Semua fungsi Create, Read, Update, Delete tercover
-- **All Endpoints**: Semua route yang ada di Postman Collection telah dibuat test casenya
-- **Data Validation**: Testing validasi input untuk negative test
-- **HTTP Methods**: GET, POST, PUT, DELETE semua tercover
 
