@@ -1,0 +1,545 @@
+{
+	"info": {
+		"_postman_id": "2a58b56f-013c-405c-bd3e-bb99c53d07a1",
+		"name": "API SIREKAP UTS PERANCANG WEB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37665454"
+	},
+	"item": [
+		{
+			"name": "Get All Data",
+			"item": [
+				{
+					"name": "Get All Data Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Data Dosen",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/dosen",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"dosen"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Data Mata Kuliah",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/matakuliah",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"matakuliah"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Data Kelas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/kelas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"kelas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Data Pengajaran",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/pengajaran",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pengajaran"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Insert Data",
+			"item": [
+				{
+					"name": "Tambah Data Users",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\": \"test\", \"email\": \"admin01@sirekap.ac.id\", \"password\": \"123\", \"role\": \"invalid\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tambah Data Dosen",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id_dosen\": \"DSN003\",\r\n  \"nidn\": \"1122334455\",\r\n  \"nama_dosen\": \"Prof. Budi Santoso, Ph.D.\",\r\n  \"gelar\": \"S.Si., M.Sc., Ph.D.\",\r\n  \"no_hp\": \"085211223344\",\r\n  \"email\": \"budi.santoso@sirekap.ac.id\",\r\n  \"id_user\": 6\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/dosen",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"dosen"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tambah Data Mata Kuliah",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id_matakuliah\": \"MK0015\",\r\n  \"kode_matakuliah\": \"JAR102\",\r\n  \"nama_matakuliah\": \"Pemrograman Da Jaringan\",\r\n  \"sks\": 3,\r\n  \"semester\": 3,\r\n  \"jenis\": \"praktikum\",\r\n  \"id_dosen\": \"DSN003\",\r\n  \"jenis_dosen\": \"pengampu\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/matakuliah",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"matakuliah"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tambah Data Kelas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id_kelas\": \"KLS003\",\r\n  \"nama_kelas\": \"INF-2C\",\r\n  \"kapasitas\": 30,\r\n  \"tahun_ajaran\": \"2024/2025\",\r\n  \"semester\": \"genap\",\r\n  \"program_studi\": \"Informatika\",\r\n  \"jenjang\": \"S1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/kelas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"kelas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tambah Data Pengajaran",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id_pengajaran\": \"PJR00003\",\r\n  \"id_dosen\": \"DSN001\",\r\n  \"id_matakuliah\": \"MK0015\",\r\n  \"id_kelas\": \"KLS003\",\r\n  \"tahun_ajar\": 2024,\r\n  \"semester\": \"Genap\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/pengajaran",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pengajaran"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ambil Data Dan Edit",
+			"item": [
+				{
+					"name": "Ambil Data Users",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"admin_updated1\",\r\n  \"email\": \"admin_updated@sirekap.ac.id\",\r\n  \"role\": \"admin\",\r\n  \"is_active\": 1,\r\n  \"ls_lock\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ambil Data Dosen",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nama_dosen\": \"Dr. Ahmad S.Kom., M.Kom., Ph.D.\",\r\n  \"gelar\": \"S.Kom., M.Kom., Ph.D.\",\r\n  \"no_hp\": \"081234567899\",\r\n  \"email\": \"ahmad.phd@sirekap.ac.id\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/dosen/DSN001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"dosen",
+								"DSN001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ambil Data Mata Kuliah",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"kode_matakuliah\": \"JAR101\",\r\n  \"nama_matakuliah\": \"Pemrograman Dan Jaringan\",\r\n  \"sks\": 3,\r\n  \"semester\": 3,\r\n  \"jenis\": \"praktikum\",\r\n  \"id_dosen\": \"DSN003\",\r\n  \"jenis_dosen\": \"pengampu\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/matakuliah/MK0015",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"matakuliah",
+								"MK0015"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ambil Data Kelas",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"kapasitas\": 45\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/kelas/KLS001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"kelas",
+								"KLS001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ambil Data Pengajaran",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"semester\": \"Ganjil\",\r\n    \"tahun_ajar\": 2025\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/pengajaran/PJR00001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pengajaran",
+								"PJR00001"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hapus Data",
+			"item": [
+				{
+					"name": "Hapus Data Users",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/users/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hapus Data Users Kelas",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/kelas/RK0231",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"kelas",
+								"RK0231"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hapus Data Dosen",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/dosen/DSN002",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"dosen",
+								"DSN002"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hapus Data Mata Kuliah",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id_matakuliah\": \"MK0015\",\r\n  \"kode_matakuliah\": \"JAR102\",\r\n  \"nama_matakuliah\": \"Pemrograman Da Jaringan\",\r\n  \"sks\": 3,\r\n  \"semester\": 3,\r\n  \"jenis\": \"praktikum\",\r\n  \"id_dosen\": \"DSN003\",\r\n  \"jenis_dosen\": \"pengampu\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/matakuliah/MK0002",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"matakuliah",
+								"MK0002"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hapus Data Pengajaran",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/pengajaran/PJR00002",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pengajaran",
+								"PJR00002"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
